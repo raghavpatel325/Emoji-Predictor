@@ -1,8 +1,11 @@
 # Emoji-Predictor
 
-glove.6B.50d.txt:-
+glove.6B.50d.txt Dataset:-
 
 https://www.kaggle.com/datasets/watts2/glove6b50dtxt?resource=download
+
+Colab :- https://colab.research.google.com/drive/1hsqJKyd1SYHO0FLoJc8QdQpCwgQ2t2DI?usp=sharing
+
 
 
 Importing Libraries: We start by importing the necessary libraries, such as pandas and numpy, which help with data manipulation and analysis.
