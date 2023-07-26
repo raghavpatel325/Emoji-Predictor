@@ -37,3 +37,22 @@ Evaluating on Test Data: We evaluate the trained model on the test data and prin
 Making Predictions: We use the trained model to predict emojis for each text in the test data. We print the text, predicted emoji, and actual emoji for comparison.
 
 Overall, this project demonstrates the process of training an RNN model to predict emojis based on text input using word embeddings.
+
+
+....................................................................................................................................................................................................................................................................................................
+About the word embedding:-
+In the context of natural language processing (NLP), "embedding" refers to the process of converting words or phrases into dense vectors of numerical values. Pre-trained word embeddings are word representations that have been learned on a large corpus of text data before being used in specific NLP tasks.
+
+One popular method for creating word embeddings is called GloVe (Global Vectors for Word Representation). GloVe is an unsupervised learning algorithm that aims to capture the semantic meaning of words by analyzing their co-occurrence patterns in a large corpus of text. The underlying idea is that words that often appear together in similar contexts are likely to have similar meanings.
+
+Here's how the process works:
+
+Data Collection: A vast amount of text data is gathered from various sources, such as books, articles, websites, etc. This corpus contains numerous words and their contextual relationships.
+
+Co-occurrence Matrix: A co-occurrence matrix is constructed, where each cell represents the number of times a word appears in the context of another word within a specified window of words.
+
+Training GloVe: The co-occurrence matrix is used to train the GloVe model. The model learns to represent words as dense vectors in a high-dimensional space, capturing their semantic relationships based on the co-occurrence patterns.
+
+Creating Word Embeddings: Once the GloVe model is trained, each word in the vocabulary is associated with a fixed-size dense vector, typically containing hundreds of dimensions. These vectors are the pre-trained word embeddings.
+
+The advantage of using pre-trained word embeddings like GloVe is that they capture meaningful semantic relationships between words, even for rare or unseen words, which makes them beneficial for a wide range of NLP tasks. By using these pre-trained embeddings, you can leverage the knowledge gained from large text corpora without needing to train a word embedding model from scratch on your specific dataset, which can be computationally expensive and may require a massive amount of text data. This makes it easier to work with smaller datasets and still achieve meaningful results in various NLP applications, such as sentiment analysis, text classification, machine translation, and more.
